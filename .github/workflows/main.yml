@@ -29,7 +29,7 @@ jobs:
       
       - name: Install and Build 🔧 
         env:
-          CF_DOMAIN: ${{ secrets.CF_DOMAIN }} # CF-Workers反代域名，`DIRECT`直连
+          CF_DOMAIN: ${{ secrets.pikpak.cgavt.workers.dev }} # CF-Workers反代域名，`DIRECT`直连
           REPO_NAME: ${{ github.event.repository.name }}
           BASE_PATH: ${{ secrets.BASE_PATH }} # 页面Base-path，默认"/{repo_name}"如"/pikpak"
           INVITE_CODE: ${{ secrets.INVITE_CODE }} # APK邀请码
